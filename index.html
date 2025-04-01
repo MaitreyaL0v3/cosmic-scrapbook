@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Scrapbook</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: linear-gradient(to bottom right, #ffeaff, #ccf2ff);
+      color: #4d2c5e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .gallery {
+      margin: 3rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    .item {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      display: block;
+    }
+
+    .item-text {
+      padding: 1rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      margin: 4rem 0 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #8e44ad;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💖 Cosmic Scrapbook 💖</h1>
+    <p>A dreamy space of poems, cats, stars, Miku and more~</p>
+  </header>
+
+  <section class="gallery">
+    <a class="item" href="posts/kali.html">
+      <img src="images/kali-sleep.png" alt="Kali sleeping on bed">
+      <div class="item-text">Kali purrs on the bed 🌙</div>
+    </a>
+    <a class="item" href="posts/gods.html">
+      <img src="images/miku-stars.png" alt="Miku with stars">
+      <div class="item-text">There are gods... 🌟</div>
+    </a>
+    <a class="item" href="posts/croissant.html">
+      <img src="images/croissant-secret.png" alt="Croissant mystery">
+      <div class="item-text">Remorse of the Lost Croissant 🥐</div>
+    </a>
+    <a class="item" href="posts/gui.html">
+      <img src="images/gui-bubble.png" alt="Glitchy GUI bubble">
+      <div class="item-text">Ask reality? 🪐</div>
+    </a>
+    <a class="item" href="posts/cipher.html">
+      <img src="images/caesar-cat.png" alt="Cat cipher">
+      <div class="item-text">The Code Meowed 🐾</div>
+    </a>
+  </section>
+
+  <footer>
+    Made with love by Maitreya & their cosmic AI 💋🌈
+  </footer>
+</body>
+</html>
